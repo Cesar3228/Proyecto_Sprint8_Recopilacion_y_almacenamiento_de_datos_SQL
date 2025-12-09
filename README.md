@@ -55,35 +55,29 @@ Each visualization is followed by interpretations explaining the observed patter
 
 ## Hypothesis Testing
 
+### Hypotheses
 **Null hypothesis (H₀):**  
 The average duration of trips from the Loop to O’Hare International Airport does not change on rainy Saturdays.
 
 **Alternative hypothesis (H₁):**  
 The average duration of trips from the Loop to O’Hare International Airport changes on rainy Saturdays.
 
-A significance level (α) is defined, and statistical testing is performed to determine whether the observed differences are statistically significant.
+### Methodology
+Only Saturday trips from the Loop to O’Hare International Airport were selected.  
+Trips were divided into two groups based on weather conditions: rainy and non-rainy.
 
----
+A Levene’s test was applied to evaluate the assumption of equal variances. Since the test did not show statistically significant evidence of unequal variances, a two-sample Student’s t-test assuming equal variances was used.
 
-## Tools and Libraries
-- Python
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scipy
+The test was performed using a significance level of α = 0.05.
 
----
+### Results
+- t-statistic: **-6.946**
+- p-value: **< 0.001**
 
-## Key Insights
-- A small number of taxi companies generate a large proportion of trips
-- Trip drop-offs are concentrated in specific neighborhoods
-- Weather conditions have a measurable impact on trip duration, supported by statistical testing
+Since the p-value is lower than the significance level, the null hypothesis was rejected.
 
----
-
-## Conclusion
-This project demonstrates how exploratory data analysis and hypothesis testing can be used together to extract insights from transportation data and evaluate the impact of external factors such as weather on urban mobility.
+### Conclusion
+There is statistically significant evidence that the average duration of trips from the Loop to O’Hare International Airport changes on rainy Saturdays.
 
 ---
 
@@ -121,18 +115,29 @@ Cada gráfico incluye conclusiones e interpretación de los resultados.
 
 ## Prueba de Hipótesis
 
+### Hipótesis
 **Hipótesis nula (H₀):**  
 La duración promedio de los viajes desde el Loop hasta el Aeropuerto Internacional O’Hare no cambia los sábados lluviosos.
 
 **Hipótesis alternativa (H₁):**  
 La duración promedio de los viajes desde el Loop hasta el Aeropuerto Internacional O’Hare sí cambia los sábados lluviosos.
 
-Se define un nivel de significación (α) y se aplica un método estadístico adecuado para evaluar la hipótesis.
+### Metodología
+Se filtraron únicamente los viajes realizados en sábado desde el Loop hasta el Aeropuerto Internacional O’Hare.  
+Los datos se dividieron en dos grupos según las condiciones climáticas: lluvioso y no lluvioso.
 
----
+Se aplicó la prueba de Levene para evaluar el supuesto de igualdad de varianzas. Dado que no se encontró evidencia estadística suficiente para rechazar la igualdad de varianzas, se utilizó una prueba t de Student para dos muestras independientes asumiendo varianzas iguales.
 
-## Conclusión
-Este proyecto muestra cómo el análisis exploratorio de datos y las pruebas de hipótesis permiten identificar patrones relevantes y validar supuestos en datos de transporte urbano, integrando análisis estadístico con conclusiones prácticas.
+El nivel de significancia utilizado fue α = 0.05.
+
+### Resultados
+- Estadístico t: **-6.946**
+- p-valor: **< 0.001**
+
+Dado que el p-valor es menor que el nivel de significancia, se rechaza la hipótesis nula.
+
+### Conclusión
+Existe evidencia estadísticamente significativa de que la duración promedio de los viajes desde el Loop hasta el Aeropuerto Internacional O’Hare sí cambia los sábados lluviosos.
 
 ---
 
