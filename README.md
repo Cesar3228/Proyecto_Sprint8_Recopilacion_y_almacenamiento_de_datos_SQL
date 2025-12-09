@@ -1,7 +1,7 @@
 # Proyecto_Sprint8_Recopilacion_y_almacenamiento_de_datos_SQL (English/Español)
 
-# Sprint 8 – Statistical Data Analysis of Taxi Trips in Chicago  
-### (TripleTen Data Science Program)
+## Statistical Data Analysis of Taxi Trips in Chicago  
+### TripleTen Data Science Program
 
 ---
 
