@@ -35,7 +35,9 @@ The analysis focuses on data cleaning, aggregation, visualization, and statistic
 - **start_ts**: trip start date and time  
 - **weather_conditions**: weather conditions at trip start  
 - **duration_seconds**: trip duration in seconds  
-- Contains trips from the Loop to O’Hare International Airport  
+- Contains trips from the Loop to O’Hare International Airport
+
+  Note: Datasets are not included due to platform restrictions.
 
 ---
 
